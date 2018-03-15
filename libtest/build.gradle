@@ -35,7 +35,7 @@ dependencies {
     })
 
 
-//    compile(name: 'mylibrary-1.1.0', ext: 'aar')
+    compile(name: 'mylibrary-1.1.0', ext: 'aar')
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
@@ -49,14 +49,14 @@ ext {
     bintrayRepo = 'kabuse'
     bintrayName = 'libtest'
 
-    publishedGroupId = 'com.youjie'
+    publishedGroupId = 'com.libt'
     libraryName = 'libttt'
     artifact = 'libtest'
 
     libraryDescription = 'a library for own android'
 
-    siteUrl = 'https://gitee.com/natanic/testp'
-    gitUrl = 'https://gitee.com/natanic/testp.git'
+    siteUrl = 'https://github.com/Natanic/libtest'
+    gitUrl = 'https://github.com/Natanic/libtest.git'
 
     libraryVersion = '1.1.0'
 

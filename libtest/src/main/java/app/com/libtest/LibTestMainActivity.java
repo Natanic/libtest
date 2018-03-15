@@ -1,8 +1,11 @@
 package app.com.libtest;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import app.com.mylibrary.MainLibraryActivity;
 
 public class LibTestMainActivity extends AppCompatActivity {
 
@@ -14,8 +17,8 @@ public class LibTestMainActivity extends AppCompatActivity {
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(LibTestMainActivity.this, MainLibraryActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(LibTestMainActivity.this, MainLibraryActivity.class);
+                startActivity(intent);
             }
         });
     }
