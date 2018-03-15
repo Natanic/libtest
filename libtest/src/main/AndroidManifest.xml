@@ -8,6 +8,8 @@
         android:supportsRtl="true">
         <activity android:name=".LibTestMainActivity">
         </activity>
+        <activity android:name=".mainActivity">
+        </activity>
     </application>
 
 </manifest>

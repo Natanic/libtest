@@ -47,5 +47,5 @@ dependencies {
 //    compile('com.youjie:mylibrary:1.1.0')
 
 //    compile 'com.lib:mylib:1.1.0'
-    compile ('com.libt:libtest:1.1.0')
+    compile ('com.libt:libtest:1.1.3')
 }
