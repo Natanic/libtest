@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "app.com.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    jcenter()
+    flatDir {
+        dirs 'libs'
+    }
+
+//    maven { url "file://C:/Users/kalu/.m2/repository/mysdk" } 本地
+
+//    maven { url "https://github.com/mytestlib1/sdktest/raw/master" } 线上仓库github
+
+    maven { url "https://dl.bintray.com/deer/kabuse/" }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+
+//    compile(name: 'mylibrary-1.1.0', ext: 'aar')
+
+//    compile project(':mylibrary')
+//    compile('com.youjie:mylibrary:1.1.0')
+
+//    compile 'com.lib:mylib:1.1.0'
+//    compile ('com.youjie:libtest:1.1.0')
+}
